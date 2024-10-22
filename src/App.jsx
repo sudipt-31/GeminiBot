@@ -20,7 +20,7 @@ const App = () => {
   const generateResponse = async (msg) => {
     let allMessages = [...messages];
     const genAI = new GoogleGenerativeAI(
-      "AIzaSyBgQgb-bXaPnrRcMe6Ds-IGEvD0h47nGh8"
+      "enter the  yours gemini api key"
     );
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const result = await model.generateContent(msg);
